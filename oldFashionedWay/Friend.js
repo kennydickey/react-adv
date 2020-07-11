@@ -3,11 +3,11 @@ class Friend extends React.Component {
   const { name, hobbies } = this.props; //name = this.props.name etc
   return(
    <div>
-    <p>I am a friend</p>
     <h1>{name}</h1>
     <ul>
-     <li>Singing</li>
      <li>Dancing</li>
+     {/* curlys within jsx markup to make h dynamic as part of js */}
+     {hobbies.map(h => <li>{h}</li>)}
     </ul>
    </div>
   );
