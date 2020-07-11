@@ -17,6 +17,10 @@ class App extends React.Component {
 					name="elton"
 					hobbies={['piano', 'singing']}
 				/>
+				<Friend
+					name="frida"
+					hobbies={['drawing', 'painting']}
+				/>
 
 				<NumPicker img="https://i.pinimg.com/originals/17/5e/2f/175e2f55ecb45be4927d457e9dbfaab3.jpg"/>
 		</div>
