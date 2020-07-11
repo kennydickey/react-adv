@@ -12,9 +12,15 @@ class App extends React.Component {
 				isFunny // same as saying isFunny={true}
 				bangs={4}
 				/>
+
+				<Friend
+					name="elton"
+					hobbies={['piano', 'singing']}
+				/>
+
 				<NumPicker img="https://i.pinimg.com/originals/17/5e/2f/175e2f55ecb45be4927d457e9dbfaab3.jpg"/>
 		</div>
-		)
+			)
 		}
 }
 
