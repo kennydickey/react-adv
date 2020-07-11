@@ -12,6 +12,9 @@ class App extends React.Component {
 				isFunny // same as saying isFunny={true}
 				bangs={4}
 				/>
+				<Hello
+				to='George'
+				/>
 
 				<Friend
 					name="elton"
