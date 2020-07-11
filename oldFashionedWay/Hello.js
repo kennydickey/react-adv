@@ -8,6 +8,11 @@ function getNum() {
 }
 
 class Hello extends React.Component {
+	//default props for hello from to render missing data
+	static defaultProps = { 
+		from: 'Anon',
+		bangs : 1
+	}
 	render() {
   console.log(this.props); //props are added to declaration in higher component, shows as an obj in console, also try this.props.to as example to grab parts of obj
   //this.props.name = coltsCat // does not work here bc props are immutable
