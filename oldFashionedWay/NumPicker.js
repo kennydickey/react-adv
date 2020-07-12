@@ -7,6 +7,7 @@ class NumPicker extends React.Component {
 				<h1>random num is {num}</h1>
 				{/* ternary if num = 7 this else that*/}
 				<p>{num === 7 ? 'congrats!' : 'wrong num :('}</p>
+				<p className={num === 7 ? 'Hello-win' : 'Hello-lose'}>!colorresult</p> {/* separate p tag to visualize css */}
     {/* img using props */}
     <img src={this.props.img} />
     {/* multi line ternary */}

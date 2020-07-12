@@ -1,0 +1,13 @@
+.Hello {
+ border: 2px solid black;
+ background-color: lightblue;
+}
+
+.Hello-win { /* dash syntax adding to component name by convention */
+ color: green;
+
+}
+
+.Hello-lose {
+ color: red;
+}
