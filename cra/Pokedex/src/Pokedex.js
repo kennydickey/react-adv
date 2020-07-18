@@ -1,8 +1,10 @@
 //imrc snippet
 import React, { Component } from 'react';
 import Pokecard from './Pokecard';
+import './Pokedex.css';
 
 class Pokedex extends Component{
+ //moved defaultprops to pokegame
  static defaultProps = {
   pokemon : [
    {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
@@ -16,12 +18,24 @@ class Pokedex extends Component{
   ]
  };
  render(){
+  let title;
+  if(this.props.isWinner) {
+   title = <h1 className="Pokedex-winner">Winning Hand</h1>
+  } else {
+   title = <h1 className="Pokedex-loser">Losing Hand</h1>
+  }
   return (
    <div className="Pokedex">
+    {title}
     <h1>Pokedex!</h1>
+    <h3>Total Experience: {this.props.exp}</h3> {/* exp and isWinner coming from our prop in Pokegame within Pokedex component */}
+    <p>{this.props.isWinner ? 'winner!' : 'second place!'}</p>
+    <div className="Pokedex-cards">
     {this.props.pokemon.map((p) => (
      <Pokecard id={p.id} name={p.name} type={p.type} exp={p.base_exp} />
-    ))}
+     ))
+    }
+    </div>
    </div>
   )
  }
