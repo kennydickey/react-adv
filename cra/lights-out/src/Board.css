@@ -1,3 +1,42 @@
 .Board {
   margin: 0 auto;
 }
+
+.title {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second {
+  margin-left: 20px;
+  color: aqua;
+  animation: neon 2s linear infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    color: lightcyan;
+  }
+  50% {
+    color: lightpink;
+  }
+}
+
+tr:first-child td:first-child {
+  border-radius: 35px 0 0 0 !important;
+}
+tr:last-child td:last-child {
+  border-radius: 0 0 35px 0 !important;
+}
+
+.winner {
+  font-size: 75px;
+}
+
+.winner .second{ /* if second within winner */
+  color: red;
+  font-size: 100px;
+}
