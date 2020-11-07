@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <BoxContainer/>
+      {/* new comp test */}
     </div>
   );
 }
